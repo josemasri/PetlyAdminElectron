@@ -1,0 +1,21 @@
+<div class="login-container">
+  <div class="row">
+    <div class="col-md-6 login-form-2">
+      <h3>PetlyAdmin</h3>
+      <form>
+        <div class="form-group">
+          <input [(ngModel)]="email" type="text" class="form-control" placeholder="Email *" name="email">
+        </div>
+        <div class="form-group">
+          <input [(ngModel)]="password" type="password" class="form-control" placeholder="Contraseña *" name="password">
+        </div>
+        <div class="form-group">
+          <button type="button" (click)="login()" class="btn btn-block btnSubmit"><fa-icon [icon]="faSignInAlt"></fa-icon> Login</button>
+        </div>
+        <div class="form-group">
+          <button class="ForgetPwd" class="btn btn-info" value="Login" (click)="forgetPassword()">Olvidaste tu contraseña?</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

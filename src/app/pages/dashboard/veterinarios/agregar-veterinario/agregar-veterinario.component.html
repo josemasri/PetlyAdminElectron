@@ -1,0 +1,30 @@
+<div class="px-5">
+  <h2 class="text-center">Agregar Veterinario</h2>
+  <form class="form">
+    <div class="form-group">
+      <label for="">Nombre</label>
+      <input class="form-control" placeholder="Juan" [(ngModel)]="veterinario.nombre" name="nombre">
+    </div>
+    <div class="form-group">
+      <label for="">Apellido Paterno</label>
+      <input type="text" class="form-control" placeholder="Juan" [(ngModel)]="veterinario.apellidoP" name="apellidoP">
+    </div>
+    <div class="form-group">
+      <label for="">Apellido Materno</label>
+      <input type="text" class="form-control" placeholder="Perez" [(ngModel)]="veterinario.apellidoM" name="apellidoM">
+    </div>
+    <div class="form-group">
+      <label for="">Email</label>
+      <input type="email" class="form-control" placeholder="juan@mail.com" [(ngModel)]="veterinario.email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="">Password</label>
+      <input type="password" class="form-control" placeholder="*********" [(ngModel)]="veterinario.password" name="password">
+    </div>
+    <div class="form-group">
+      <label for="">Confirma Password</label>
+      <input type="password" class="form-control" placeholder="*********" [(ngModel)]="veterinario.confirmPassword" name="confirmPassword">
+    </div>
+    <button type="button" class="btn btn-success btn-block" (click)="agregar()">Agregar</button>
+  </form>
+</div>
