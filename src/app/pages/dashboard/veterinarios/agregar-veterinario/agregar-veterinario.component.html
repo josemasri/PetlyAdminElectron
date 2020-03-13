@@ -1,4 +1,4 @@
-<div class="px-5">
+<div class="p-5">
   <h2 class="text-center">Agregar Veterinario</h2>
   <form class="form">
     <div class="form-group">
@@ -25,6 +25,6 @@
       <label for="">Confirma Password</label>
       <input type="password" class="form-control" placeholder="*********" [(ngModel)]="veterinario.confirmPassword" name="confirmPassword">
     </div>
-    <button type="button" class="btn btn-success btn-block" (click)="agregar()">Agregar</button>
+    <button type="button" class="btn btn-success btn-block" (click)="agregar()"><fa-icon [icon]="faPlusCircle"></fa-icon> Agregar</button>
   </form>
 </div>

@@ -3,6 +3,7 @@ import { Usuario } from '../../../../interfaces/interfaces';
 import Swal from 'sweetalert2';
 import { UsuarioService } from '../../../../core/services/usuario/usuario.service';
 import { catchError } from 'rxjs/operators';
+import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-agregar-veterinario',
@@ -12,7 +13,7 @@ import { catchError } from 'rxjs/operators';
 export class AgregarVeterinarioComponent implements OnInit {
 
   veterinario: Usuario;
-
+  faPlusCircle = faPlusCircle;
 
 
   constructor(

@@ -6,5 +6,5 @@
 export const AppConfig = {
   production: false,
   environment: 'DEV',
-  SERVICES_URL: 'https://petly.herokuapp.com'
+  SERVICES_URL: 'http://localhost:3000'
 };

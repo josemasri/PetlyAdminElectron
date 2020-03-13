@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    if(this.ValidateEmail(this.email)) {
+    if(this.validateEmail(this.email)) {
       if(this.password.length < 8) {
         this.errorAlert('La contraseña no es valida');
         return;
@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  ValidateEmail(mail) {
+  validateEmail(mail) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
       return true;
     }

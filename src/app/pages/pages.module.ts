@@ -8,8 +8,12 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { WellcomeComponent } from './dashboard/wellcome/wellcome.component';
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { AgregarVeterinarioComponent } from './dashboard/veterinarios/agregar-veterinario/agregar-veterinario.component';
+import { VisualizarVetrinariosComponent } from './dashboard/veterinarios/visualizar-vetrinarios/visualizar-vetrinarios.component';
+import { AgregarPerroComponent } from './dashboard/animales/perro/agregar-perro/agregar-perro.component';
+import { VisualizarPerrosComponent } from './dashboard/animales/perro/visualizar-perros/visualizar-perros.component';;
+import { PipesModule } from '../pipes/pipes.module';
+import { VisualizarDonacionesComponent } from './dashboard/donaciones/visualizar-donaciones/visualizar-donaciones.component';
 
 
 @NgModule({
@@ -17,7 +21,11 @@ import { AgregarVeterinarioComponent } from './dashboard/veterinarios/agregar-ve
     LoginComponent,
     DashboardComponent,
     WellcomeComponent,
-    AgregarVeterinarioComponent
+    AgregarVeterinarioComponent,
+    VisualizarVetrinariosComponent,
+    AgregarPerroComponent,
+    VisualizarPerrosComponent,
+    VisualizarDonacionesComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +34,7 @@ import { AgregarVeterinarioComponent } from './dashboard/veterinarios/agregar-ve
     SweetAlert2Module,
     FontAwesomeModule,
     ChartsModule,
-    MatSidenavModule
+    PipesModule
   ]
 })
 export class PagesModule { }

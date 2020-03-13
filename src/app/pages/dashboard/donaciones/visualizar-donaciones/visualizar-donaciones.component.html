@@ -1,0 +1,27 @@
+<table class="mt-5 table table-striped table-bordered text-center">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Email</th>
+      <th scope="col">Periodo</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">Fecha</th>
+
+    </tr>
+  </thead>
+  <tbody *ngIf="donaciones" >
+    <tr *ngFor="let donacion of donaciones">
+      <td>{{donacion.id}}</td>
+      <td>{{donacion.nombre}}</td>
+      <td>{{donacion.apellido}}</td>
+      <td>{{donacion.cantidad}}</td>
+      <td>{{donacion.email}}</td>
+      <td>{{donacion.periodo}}</td>
+      <td>{{donacion.direccion}}</td>
+      <td>{{donacion.fecha | date:'full'}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,28 @@
+<table class="mt-5 table table-striped table-bordered text-center">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Imágen</th>
+      <th scope="col">id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Dieta</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Raza</th>
+      <th scope="col">Tamaño</th>
+      <th scope="col">QR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let perro of perros">
+      <td><img [src]="perro.img | img:'animal'" alt="" width="100px"></td>
+      <td>{{perro.id}}</td>
+      <td>{{perro.nombre}}</td>
+      <td>{{perro.sexo}}</td>
+      <td>{{perro.dieta}}</td>
+      <td>{{perro.edad}}</td>
+      <td>{{perro.raza}}</td>
+      <td>{{perro.tamano}}</td>
+      <td><img [src]="perro.id | qr" alt=""></td>
+    </tr>
+  </tbody>
+</table>
